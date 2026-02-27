@@ -1,0 +1,114 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color:#FFFFFF00;
+}
+canvas {
+  display: block;
+}
+
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 200;
+  min-width:200%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+  overflow: hidden;
+  transform: translateY(0);
+}
+
+.tab_group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  translate: 0 50px;
+  margin: 0 auto;
+  height: 20%;
+  width: 72%;
+  background-color: #06132D60;
+  border: none;
+}
+
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 8vh;
+  color: #FFFFFF;
+  background-color: #06132D60;
+  border-width: 5px;
+  border-left: 5px;
+  border-right: 5px;
+  border-bottom: 0;
+  border-top: 5px;
+  border-style: solid;
+  border-color: #091733;
+  border-radius: 25px 25px 0 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #06284DBA;
+  transform: scale(1.05);
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  translate: 0 50px;
+  margin: 0 auto;
+  height: 300vh;
+  width: 70%;
+  background-color: #06132D60;
+  padding: 5px 10px; 
+  border-left: 5px;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-top: 0;
+  border-style: solid;
+  border-color: #091733;
+  border-radius: 0 0 15px 15px; 
+}
+
+.rank {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100%;
+  height: 100%;
+  background-color: #0C1F44;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #091733;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.rank:hover {
+  background-color: #06284D;
+  transform: scale(1.02);
+}
+
+.card {
+  width:25%;
+  height: 100%;
+  background-color: #FFEB3B;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 100%);
+  
+  color: #FFFFFF;
+  font-family: copperplate, Fantasy;
+  font-size:clamp(1rem, 2vw, 3.5rem);
+}
