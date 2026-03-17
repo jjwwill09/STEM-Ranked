@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>STEM Ranked</title>
+    <link rel="icon" type="image/x-icon" href="assets/IMT.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="main_body">
+
+      <!-- Background Video -->
+      <video autoplay loop muted playsinline class="back-video">
+        <source src="assets/STEM_Ranked_Background_1.mp4" type="video/mp4">
+      </video>
+
+      <!-- School Logo -->
+      <a href="https://imterrell.fwisd.org/" target="_blank">
+        <img src="assets/IMT.png" alt="Terrell logo" style="width: 40px; height: 40px;">
+      </a>
+
+      <!-- Tabs -->
+      <div class="tab_group">
+        <button class="tab">Overall</button>
+        <button class="tab">Math</button>
+        <button class="tab">Science</button>
+        <button class="tab">Computer Science</button>
+        <button class="tab">Weighted GPA</button>
+        <button class="tab">Certificates</button>
+        <button class="tab">Extra Curricular's</button>
+      </div>
+
+      <!-- Dynamic Ranking Container -->
+      <div class="container" id="rankingContainer">
+        <!-- Student Cards will be injected here by parse.js -->
+      </div>
+
+      <div class="footer"></div>
+    </div>
+
+    <!-- Background scroll effect -->
+    <script>
+      const backVideo = document.querySelector('.back-video');
+      const scrollSpeedFactor = 0.5;
+
+      window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        backVideo.style.transform = `translateY(${scrollY * scrollSpeedFactor}px)`;
+      });
+    </script>
+
+    <!-- Ranking script -->
+    <script src="parse.js"></script>
+
+  </body>
+</html>
