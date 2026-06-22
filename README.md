@@ -28,3 +28,5 @@ Upload contents to a html compiler
 
 # --- Sources ---
 - p5.js. (2019). p5.js | home. P5js.org. https://p5js.org/
+- MCTIERS - rankings. (n.d.). https://mctiers.com
+- Photopea | Online Photo editor. (n.d.-b). https://www.photopea.com/ 
